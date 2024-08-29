@@ -1,0 +1,33 @@
+@media(max-width:991px){
+    .main__logo{
+        margin-right: 0;
+    }
+}
+.header__sticky{
+    background: #000;
+}
+.header__sticky.sticky{
+    background: #000;
+}
+.offcanvas-header.open .offcanvas__logo_link img{
+    width: 203px;
+}
+.main__header--inner .main__logo--link img{
+    width: 228px;
+}
+.header__menu--link{
+    color: #fff;
+}
+.image__with--text__percent--list::after{
+    width: 90%;
+}
+.image__with--text__percent--list.two::after{
+    width: 100%;
+}
+.about__section .about__thumbnail img{
+    width: 100%;
+    border-radius: 10px;
+}
+.footer__logo img{
+    width: 200px;
+}
