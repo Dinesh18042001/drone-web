@@ -21,3 +21,34 @@
         padding: 2rem;
     }
 }
+
+
+
+@media(max-width: 550px) {
+    .contents-wraper .indicators {
+        bottom: 0;
+        left: 50%;
+    }
+}
+
+
+@media(max-width: 550px) {
+    .container .contents-wraper {
+        width: 90%;
+    }
+
+    .contents-wraper .header h1 {
+        font-size: 32px;
+    }
+
+    .testRow .testItem h3 {
+        font-size: 26px;
+    }
+
+    .testRow .testItem p {
+        font-size: 16px;
+        letter-spacing: initial;
+        line-height: initial;
+    }
+
+}

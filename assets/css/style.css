@@ -2101,34 +2101,34 @@ body.overlay__active::before,
 
 /* Section padding */
 .section--padding {
-  padding-top: 6rem;
+  padding-top: 4rem;
   padding-bottom: 6rem;
 }
 
 @media only screen and (min-width: 768px) {
   .section--padding {
-    padding-top: 7rem;
+    padding-top: 4rem;
     padding-bottom: 7rem;
   }
 }
 
 @media only screen and (min-width: 992px) {
   .section--padding {
-    padding-top: 8rem;
+    padding-top: 4rem;
     padding-bottom: 8rem;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .section--padding {
-    padding-top: 9rem;
+    padding-top: 4rem;
     padding-bottom: 9rem;
   }
 }
 
 @media only screen and (min-width: 1600px) {
   .section--padding {
-    padding-top: 10rem;
+    padding-top: 5rem;
     padding-bottom: 10rem;
   }
 }
@@ -4261,7 +4261,7 @@ input[type="number"]::-webkit-outer-spin-button {
   }
 }
 
-.slider__pagination.swiper-pagination {
+/* .slider__pagination.swiper-pagination {
   position: absolute;
   top: 50%;
   bottom: auto !important;
@@ -4279,19 +4279,34 @@ input[type="number"]::-webkit-outer-spin-button {
   -webkit-transform: translatey(-50%);
   transform: translatey(-50%);
   left: 20px;
+} */
+
+
+.slider__pagination.swiper-pagination {
+  position: absolute;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -ms-flexbox;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transform: translatey(-50%);
+  transform: translatey(-50%);
 }
 
-@media only screen and (min-width: 1200px) {
+/* @media only screen and (min-width: 1200px) {
   .slider__pagination.swiper-pagination {
     left: 30px;
   }
-}
+} */
 
-@media only screen and (min-width: 1366px) {
+/* @media only screen and (min-width: 1366px) {
   .slider__pagination.swiper-pagination {
     left: 80px;
   }
-}
+} */
 
 @media only screen and (min-width: 1600px) {
   .slider__pagination.swiper-pagination {
@@ -7628,7 +7643,7 @@ span.info__list--item-content {
 
 @media only screen and (min-width: 1200px) {
   .breadcrumb__content--title {
-    font-size: 5rem;
+    font-size: 4rem;
     line-height: 6rem;
   }
 }
