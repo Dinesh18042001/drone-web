@@ -992,3 +992,4 @@ function pause(){
 container.addEventListener('mouseout', autoSliding);
 
 
+

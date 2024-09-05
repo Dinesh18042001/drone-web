@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Drone Works - Single Product eCommerce HTML Template</title>
+    <title>testimonials</title>
     <meta name="description" content="Morden Bootstrap HTML5 Template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
@@ -15,12 +15,22 @@
         href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&amp;family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
         rel="stylesheet">
 
-           <!-- Font Awesome for icons -->
+    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
- 
+
 
     <!-- Plugin css -->
     <!-- <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css"> -->
+
+
+    <!-- Owl CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+    <!-- Owl CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
 
     <!-- Custom Style CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -34,22 +44,24 @@
     <header class="header__section">
         <!-- Start main header -->
         <div class="main__header position__relative header__sticky">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="main__header--inner d-flex justify-content-between align-items-center">
                     <div class="offcanvas__header--menu__open ">
                         <a class="offcanvas__header--menu__open--btn" href="javascript:void(0)" data-offcanvas>
                             <svg xmlns="http://www.w3.org/2000/svg" class="ionicon offcanvas__header--menu__open--svg"
                                 viewBox="0 0 512 512">
-                                <path fill="#fff" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10"
+                                <path fill="#000" stroke="#000" stroke-linecap="round" stroke-miterlimit="10"
                                     stroke-width="32" d="M80 160h352M80 256h352M80 352h352" />
                             </svg>
                             <span class="visually-hidden">Offcanvas Menu Open</span>
                         </a>
                     </div>
+
                     <div class="main__logo">
                         <h1 class="main__logo--title"><a class="main__logo--link" href="#"><img class="main__logo--img"
                                     src="assets/img/logo/newlogo.jpg" alt="logo-img"></a></h1>
                     </div>
+
                     <div class="header__menu d-none d-lg-block">
                         <nav class="header__menu--navigation">
                             <ul class="d-flex">
@@ -62,7 +74,7 @@
 
                                 <li class="header__menu--items">
                                     <a class="header__menu--link" href="UAV-Surveying.html">Services <span
-                                            class="menu__plus--icon">+</span> </a>
+                                            class="menu__plus--icon"><i class="fas fa-caret-down"></i></span> </a>
                                     <ul class="header__sub--menu">
                                         <li class="header__sub--menu__items"><a href="UAV-Surveying.html"
                                                 class="header__sub--menu__link">UAV Surveying and Mapping</a></li>
@@ -78,7 +90,7 @@
                                 </li>
 
                                 <li class="header__menu--items mega__menu--items">
-                                    <a class="header__menu--link" href="faq.html">FAQ</a>
+                                    <a class="header__menu--link" href="faq.html">FAQs</a>
                                 </li>
 
                                 <li class="header__menu--items mega__menu--items">
@@ -97,6 +109,20 @@
                                 </li>
                             </ul>
                         </nav>
+                    </div>
+                    <div class="nav-logo">
+                        <span>
+                           <a href=""><i class="fab fa-facebook-f"></i> </a>  
+                        </span>
+                        <span>
+                           <a href=""><i class="fab fa-instagram"></i></a> 
+                        </span>
+                        <span>
+                            <a href=""><i class="fab fa-youtube"></i></a>
+                        </span>
+                       
+                     
+                        
                     </div>
 
                 </div>
@@ -137,7 +163,7 @@
                         <li class="offcanvas__menu_li">
                             <a class="offcanvas__menu_item" href="#">Gallery</a>
                         </li>
-                        <li class="offcanvas__menu_li"><a class="offcanvas__menu_item" href="faq.html">FAQ</a></li>
+                        <li class="offcanvas__menu_li"><a class="offcanvas__menu_item" href="faq.html">FAQs</a></li>
                         <li class="offcanvas__menu_li"><a class="offcanvas__menu_item"
                                 href="testimonials.html">Testimonials</a></li>
                         <li class="offcanvas__menu_li"><a class="offcanvas__menu_item" href="blog.html">Blog</a></li>
@@ -211,179 +237,68 @@
 
         <div class="testimonials-section">
             <div class="container">
-                <div class="contents-wraper">
-                    <section class="testRow">
-                        <div class="testItem active">
-                            <img src="assets/img/testimonials/model-1.jpg">
-                            <h3>Jane Doe</h3>
-                            <h4>San Francisco, USA</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="testimonial-box">
+                            <img src="assets/img/testimonials/model-1.jpg" alt="">
+                            <h3>Susan Smiht</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam autem excepturi eaque
+                                similique odio? Et perspiciatis dolorum fugit velit? Quia sed molestias modi quas
+                                mollitia. Nam praesentium eligendi expedita sapiente.</p>
                         </div>
-            
-                        <div class="testItem">
-                            <img src="assets/img/testimonials/model-2.jpg">
-                            <h3>Jane Doe</h3>
-                            <h4>San Francisco, USA</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+
+                    <div class="item">
+                        <div class="testimonial-box">
+                            <img src="assets/img/testimonials/model-2.jpg" alt="">
+                            <h3>Susan Smiht</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam autem excepturi eaque
+                                similique odio? Et perspiciatis dolorum fugit velit? Quia sed molestias modi quas
+                                mollitia. Nam praesentium eligendi expedita sapiente.</p>
                         </div>
-            
-                        <div class="testItem">
-                            <img src="assets/img/testimonials/model-3.jpg">
-                            <h3>Jane Doe</h3>
-                            <h4>San Francisco, USA</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+
+
+                    <div class="item">
+                        <div class="testimonial-box">
+                            <img src="assets/img/testimonials/model-3.jpg" alt="">
+                            <h3>Susan Smiht</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam autem excepturi eaque
+                                similique odio? Et perspiciatis dolorum fugit velit? Quia sed molestias modi quas
+                                mollitia. Nam praesentium eligendi expedita sapiente.</p>
                         </div>
-            
-                        <div class="testItem">
-                            <img src="assets/img/testimonials/model-4.jpg">
-                            <h3>Jane Doe</h3>
-                            <h4>San Francisco, USA</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+
+
+                    <div class="item">
+                        <div class="testimonial-box">
+                            <img src="assets/img/testimonials/model-4.jpg" alt="">
+                            <h3>Susan Smiht</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam autem excepturi eaque
+                                similique odio? Et perspiciatis dolorum fugit velit? Quia sed molestias modi quas
+                                mollitia. Nam praesentium eligendi expedita sapiente.</p>
                         </div>
-            
-                        <div class="testItem">
-                            <img src="assets/img/testimonials/model-5.jpg">
-                            <h3>Jane Doe</h3>
-                            <h4>San Francisco, USA</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+
+
+                    <div class="item">
+                        <div class="testimonial-box">
+                            <img src="assets/img/testimonials/model-5.jpg" alt="">
+                            <h3>Susan Smiht</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam autem excepturi eaque
+                                similique odio? Et perspiciatis dolorum fugit velit? Quia sed molestias modi quas
+                                mollitia. Nam praesentium eligendi expedita sapiente.</p>
                         </div>
-            
-                    </section>
-            
-                    <section class="indicators">
-                        <div class="dot active" attr='0' onclick="switchTest(this)"></div>
-                        <div class="dot" attr='1' onclick="switchTest(this)"></div>
-                        <div class="dot" attr='2' onclick="switchTest(this)"></div>
-                        <div class="dot" attr='3' onclick="switchTest(this)"></div>
-                        <div class="dot" attr='4' onclick="switchTest(this)"></div>
-                    </section>
-            
+                    </div>
+
+
                 </div>
+
             </div>
 
-
-
-
-
-
-            <!-- <div class="container">
-
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-25">
-                        <div class="testimonials-info">
-                            <div class="tottle d-flex align-items-center">
-                                <img src="assets/img/testimonials/img1.jpg" alt="">
-                                <div class="rating-name">
-                                    <h4>June Doe</h4>
-                                    <div class="reting">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel voluptas ullam mollitia distinctio consectetur voluptatum, iste facilis nihil nesciunt ducimus?</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-10">
-                        <div class="testimonials-info">
-                            <div class="tottle d-flex align-items-center">
-                                <img src="assets/img/testimonials/img1.jpg" alt="">
-                                <div class="rating-name">
-                                    <h4>June Doe</h4>
-                                    <div class="reting">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel voluptas ullam mollitia distinctio consectetur voluptatum, iste facilis nihil nesciunt ducimus?</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-10">
-                        <div class="testimonials-info">
-                            <div class="tottle d-flex align-items-center">
-                                <img src="assets/img/testimonials/img1.jpg" alt="">
-                                <div class="rating-name">
-                                    <h4>June Doe</h4>
-                                    <div class="reting">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel voluptas ullam mollitia distinctio consectetur voluptatum, iste facilis nihil nesciunt ducimus?</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-10">
-                        <div class="testimonials-info">
-                            <div class="tottle d-flex align-items-center">
-                                <img src="assets/img/testimonials/img1.jpg" alt="">
-                                <div class="rating-name">
-                                    <h4>June Doe</h4>
-                                    <div class="reting">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel voluptas ullam mollitia distinctio consectetur voluptatum, iste facilis nihil nesciunt ducimus?</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-10">
-                        <div class="testimonials-info">
-                            <div class="tottle d-flex align-items-center">
-                                <img src="assets/img/testimonials/img1.jpg" alt="">
-                                <div class="rating-name">
-                                    <h4>June Doe</h4>
-                                    <div class="reting">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel voluptas ullam mollitia distinctio consectetur voluptatum, iste facilis nihil nesciunt ducimus?</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-10">
-                        <div class="testimonials-info">
-                            <div class="tottle d-flex align-items-center">
-                                <img src="assets/img/testimonials/img1.jpg" alt="">
-                                <div class="rating-name">
-                                    <h4>June Doe</h4>
-                                    <div class="reting">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel voluptas ullam mollitia distinctio consectetur voluptatum, iste facilis nihil nesciunt ducimus?</p>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-
-
-
         </div>
-        
+
 
 
 
@@ -584,15 +499,54 @@
                 d="M112 244l144-144 144 144M256 120v292" />
         </svg></button>
 
-    <!-- All Script JS Plugins here  -->
-    <!-- <script src="assets/js/vendor/popper.js" defer="defer"></script> -->
+
+    <!-- jQuery JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Bootstrap JS (if you uncomment it) -->
     <!-- <script src="assets/js/vendor/bootstrap.min.js" defer="defer"></script> -->
 
+    <!-- Popper JS (if you uncomment it) -->
+    <!-- <script src="assets/js/vendor/popper.js" defer="defer"></script> -->
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Swiper Bundle JS -->
     <script src="assets/js/plugins/swiper-bundle.min.js" defer="defer"></script>
+
+    <!-- GLightbox JS -->
     <script src="assets/js/plugins/glightbox.min.js" defer="defer"></script>
 
-    <!-- Customscript js -->
+    <!-- Custom Script JS -->
     <script src="assets/js/script.js" defer="defer"></script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            navText: [
+                "<i class='fa-solid fa-arrow-left'></i>",
+                "<i class='fa-solid fa-arrow-right'></i>",
+            ],
+            autoplay: true,            
+            autoplayTimeout: 3000,       
+            autoplayHoverPause: true,   
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        });
+    </script>
+    
 
 </body>
 

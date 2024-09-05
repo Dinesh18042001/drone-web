@@ -47,7 +47,7 @@
 */
 :root {
   --primary-color: #222222;
-  --secondary-color: #787878;
+  --secondary-color: #000;
   --yellow-color: #ffc107;
   --text-gray-color: #4a4c59;
   --white-color: #ffffff;
@@ -3333,7 +3333,7 @@ body.overlay__active::before,
 }
 
 .header__menu--link {
-  font-size: 1.6rem;
+  font-size: 17px !important;
   line-height: 2.7rem;
   font-weight: 500;
   color: var(--text-gray-color);

@@ -5,11 +5,11 @@
 }
 
 .header__sticky {
-    background: #000;
+    background: #fff;
 }
 
 .header__sticky.sticky {
-    background: #000;
+    background: #fff;
 }
 
 .offcanvas-header.open .offcanvas__logo_link img {
@@ -21,7 +21,7 @@
 }
 
 .header__menu--link {
-    color: #fff;
+    color: #000;
 }
 
 .image__with--text__percent--list::after {
@@ -57,6 +57,32 @@ img.display-block.services__card--primary__icon {
 span.swiper-pagination-bullet {
     margin-left: 10px !important;
 }
+
+
+.nav-logo{
+    display: flex;
+    gap: 10px;
+}
+
+
+.nav-logo span{
+background: var(--secondary-color);
+color: #fff;
+padding: 10px;
+border-radius: 10px;
+width: 30px;
+height: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.nav-logo span:hover{
+    background: #706f6f; 
+}
+.nav-logo span:hover i{
+    color: #fff;
+}
+
 
 
 
@@ -161,6 +187,8 @@ span.swiper-pagination-bullet {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border: 2px solid #000;
+    border-radius: 10px;
 }
 
 .testRow .testItem:not(.active) {
@@ -271,66 +299,67 @@ span.swiper-pagination-bullet {
     align-items: center;
 }
 
-.serverce-section .main-serverce{
+.serverce-section .main-serverce {
     border: 2px solid #151313;
     border-radius: 10px;
     padding: 20px;
     transition: background 0.3s ease;
 }
-.serverce-section .main-serverce:hover{
+
+.serverce-section .main-serverce:hover {
     background: #f0eaea;
 }
 
 
-.serverce-section .main-serverce h3{
+.serverce-section .main-serverce h3 {
     font-weight: 600;
-    font-size: 20px; 
+    font-size: 20px;
 }
 
 
 /* serverce-info-section start */
-.serverce-info-section{
+.serverce-info-section {
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
-.serverce-info-section.info-table h5{
-font-weight: 600;
-font-size: 20px;
+.serverce-info-section.info-table h5 {
+    font-weight: 600;
+    font-size: 20px;
 }
 
-.info-table ul{
+.info-table ul {
     margin-top: 15px;
 }
 
 .info-table ul li {
-    margin-bottom: 15px; 
+    margin-bottom: 15px;
     font-size: 18px;
     color: #6c757d;
 }
 
-.service-info-section h5{
+.service-info-section h5 {
     font-weight: 600;
     font-size: 20px;
     margin-bottom: 15px;
     margin-top: 15px;
 }
 
-.service-info-section p{
+.service-info-section p {
     font-size: 18px;
 }
 
-.info-img{
+.info-img {
     text-align: center;
-} 
+}
 
-.info-img img{
+.info-img img {
     width: 35%;
     margin-top: 50px;
     border: 2px solid #000;
     padding: 10px;
     border-radius: 10px;
-} 
+}
 
 
 /* serverce-info-section end */
@@ -339,16 +368,16 @@ font-size: 20px;
 
 /* drone-consulting-section start */
 
-.drone-consulting-section p{
+.drone-consulting-section p {
     font-size: 18px;
 }
 
-.drone-consulting-section h4{
+.drone-consulting-section h4 {
     font-size: 20px;
     font-weight: 600;
 }
 
-.drone-consulting-section .infomation-img img{
+.drone-consulting-section .infomation-img img {
     width: 100%;
     height: 400px;
     object-fit: cover;
@@ -356,11 +385,12 @@ font-size: 20px;
     box-shadow: 0 4px 8px #000;
 }
 
-.drone-consulting-section ul{
+.drone-consulting-section ul {
     margin-top: 20px;
 }
-.drone-consulting-section ul li{
-    margin-bottom: 15px; 
+
+.drone-consulting-section ul li {
+    margin-bottom: 15px;
     font-size: 18px;
     color: #6c757d;
 }
@@ -372,16 +402,17 @@ font-size: 20px;
 /* feature-filmd-section start */
 
 /* feature-filmd-section start */
-.feature-films-section{
+.feature-films-section {
     margin-top: 50px;
     margin-bottom: 50px;
 }
-.feature-films-section .info h4{
+
+.feature-films-section .info h4 {
     font-weight: 600;
     font-size: 20px;
 }
 
-.feature-films-section .feature-films-img img{
+.feature-films-section .feature-films-img img {
     width: 100%;
     height: 400px;
     object-fit: cover;
@@ -390,14 +421,16 @@ font-size: 20px;
     margin-top: 20px;
 }
 
-.feature-films-section .feature-films-info h4{
+.feature-films-section .feature-films-info h4 {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.feature-films-section .feature-films-info{
+
+.feature-films-section .feature-films-info {
     font-size: 18px;
 }
-/* feature-filmd-section end */ 
+
+/* feature-filmd-section end */
 
 
 
@@ -407,5 +440,42 @@ font-size: 20px;
 
 
 
+.testimonials-section .testimonial-box {
+    text-align: center;
+    padding: 20px; 
+    border: 2px solid #787878;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
 
+.testimonials-section .testimonial-box img {
+    width: 70px; 
+    height: 70px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin-bottom: 15px; 
+    display: block;
+    margin-left: auto; 
+    margin-right: auto; 
+}
 
+.testimonials-section .testimonial-box h3 {
+    margin: 0;
+    font-size: 18px;
+    margin-bottom: 10px; 
+}
+
+.testimonials-section .testimonial-box p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.owl-theme .owl-nav i{
+    background: #787878;
+    color: #fff;
+    padding: 13px;
+    border-radius: 5px;
+}
+.owl-theme .owl-dots{
+    display: none;
+}

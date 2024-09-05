@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Drone Works - Single Product eCommerce HTML Template</title>
+    <title>Faq</title>
     <meta name="description" content="Morden Bootstrap HTML5 Template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
@@ -14,6 +14,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&amp;family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
         rel="stylesheet">
+
+
+    <!-- Font awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
 
     <!-- Plugin css -->
     <!-- <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css"> -->
@@ -30,22 +34,24 @@
     <header class="header__section">
         <!-- Start main header -->
         <div class="main__header position__relative header__sticky">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="main__header--inner d-flex justify-content-between align-items-center">
                     <div class="offcanvas__header--menu__open ">
                         <a class="offcanvas__header--menu__open--btn" href="javascript:void(0)" data-offcanvas>
                             <svg xmlns="http://www.w3.org/2000/svg" class="ionicon offcanvas__header--menu__open--svg"
                                 viewBox="0 0 512 512">
-                                <path fill="#fff" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10"
+                                <path fill="#000" stroke="#000" stroke-linecap="round" stroke-miterlimit="10"
                                     stroke-width="32" d="M80 160h352M80 256h352M80 352h352" />
                             </svg>
                             <span class="visually-hidden">Offcanvas Menu Open</span>
                         </a>
                     </div>
+
                     <div class="main__logo">
                         <h1 class="main__logo--title"><a class="main__logo--link" href="#"><img class="main__logo--img"
                                     src="assets/img/logo/newlogo.jpg" alt="logo-img"></a></h1>
                     </div>
+
                     <div class="header__menu d-none d-lg-block">
                         <nav class="header__menu--navigation">
                             <ul class="d-flex">
@@ -58,7 +64,7 @@
 
                                 <li class="header__menu--items">
                                     <a class="header__menu--link" href="UAV-Surveying.html">Services <span
-                                            class="menu__plus--icon">+</span> </a>
+                                            class="menu__plus--icon"><i class="fas fa-caret-down"></i></span> </a>
                                     <ul class="header__sub--menu">
                                         <li class="header__sub--menu__items"><a href="UAV-Surveying.html"
                                                 class="header__sub--menu__link">UAV Surveying and Mapping</a></li>
@@ -74,7 +80,7 @@
                                 </li>
 
                                 <li class="header__menu--items mega__menu--items">
-                                    <a class="header__menu--link" href="faq.html">FAQ</a>
+                                    <a class="header__menu--link" href="faq.html">FAQs</a>
                                 </li>
 
                                 <li class="header__menu--items mega__menu--items">
@@ -93,6 +99,20 @@
                                 </li>
                             </ul>
                         </nav>
+                    </div>
+                    <div class="nav-logo">
+                        <span>
+                            <a href=""><i class="fab fa-facebook-f"></i> </a>
+                        </span>
+                        <span>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </span>
+                        <span>
+                            <a href=""><i class="fab fa-youtube"></i></a>
+                        </span>
+
+
+
                     </div>
 
                 </div>
@@ -133,7 +153,7 @@
                         <li class="offcanvas__menu_li">
                             <a class="offcanvas__menu_item" href="#">Gallery</a>
                         </li>
-                        <li class="offcanvas__menu_li"><a class="offcanvas__menu_item" href="faq.html">FAQ</a></li>
+                        <li class="offcanvas__menu_li"><a class="offcanvas__menu_item" href="faq.html">FAQs</a></li>
                         <li class="offcanvas__menu_li"><a class="offcanvas__menu_item"
                                 href="testimonials.html">Testimonials</a></li>
                         <li class="offcanvas__menu_li"><a class="offcanvas__menu_item" href="blog.html">Blog</a></li>
@@ -183,7 +203,7 @@
 
 
     <main class="main__content_wrapper">
-        
+
         <!-- Start breadcrumb section -->
         <section class="breadcrumb__section breadcrumb__bg">
             <div class="container">
@@ -193,7 +213,8 @@
                             <h1 class="breadcrumb__content--title mb-10">Frequently</h1>
                             <ul class="breadcrumb__content--menu d-flex">
                                 <li class="breadcrumb__content--menu__items"><a href="index.html">Home</a></li>
-                                <li class="breadcrumb__content--menu__items"><span class="text__secondary">Frequently</span></li>
+                                <li class="breadcrumb__content--menu__items"><span
+                                        class="text__secondary">Frequently</span></li>
                             </ul>
                         </div>
                     </div>
@@ -207,272 +228,1025 @@
             <div class="container">
                 <div class="faq__section--inner">
                     <div class="face__step one border-bottom" id="accordionExample">
-                        <h3 class="face__step--title mb-30">Shipping Information</h3>
+                        <!-- <h3 class="face__step--title mb-30">Shipping Information</h3> -->
                         <div class="row">
-                            <div class="col-lg-6">
+                            <div class="col-lg-12">
                                 <div class="accordion__container">
                                     <div class="accordion__items">
                                         <h2 class="accordion__items--title">
-                                            <button class="faq__accordion--btn accordion__items--button">What Shipping Methods Are Available?
+                                            <button class="faq__accordion--btn accordion__items--button">Do your courses
+                                                and certificates meet the requirements of the Civil Aviation
+                                                Authority?
                                                 <span class="accordion__items--button__icon">
-                                                    <svg class="accordion__items--button__icon--svg" xmlns="http://www.w3.org/2000/svg" width="25.355" height="20.394" viewBox="0 0 512 512"><path d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z" fill="currentColor"/></svg>
+                                                    <svg class="accordion__items--button__icon--svg"
+                                                        xmlns="http://www.w3.org/2000/svg" width="25.355"
+                                                        height="20.394" viewBox="0 0 512 512">
+                                                        <path
+                                                            d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
+                                                            fill="currentColor" />
+                                                    </svg>
                                                 </span>
                                             </button>
                                         </h2>
                                         <div class="accordion__items--body">
-                                            <p class="accordion__items--body__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim felis.</p>
+                                            <p class="accordion__items--body__desc">Yes. Both Drone Works Consultancy,
+                                                as a training administrator, and the courses are
+                                                approved, accredited and recommended by the CAAF.</p>
                                         </div>
                                     </div>
                                     <div class="accordion__items">
                                         <h2 class="accordion__items--title">
-                                            <button class="faq__accordion--btn accordion__items--button">How Long Will it Take To Get My Package??
+                                            <button class="faq__accordion--btn accordion__items--button">What courses do
+                                                you offer?
                                                 <span class="accordion__items--button__icon">
-                                                    <svg class="accordion__items--button__icon--svg" xmlns="http://www.w3.org/2000/svg" width="25.355" height="20.394" viewBox="0 0 512 512"><path d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z" fill="currentColor"/></svg>
+                                                    <svg class="accordion__items--button__icon--svg"
+                                                        xmlns="http://www.w3.org/2000/svg" width="25.355"
+                                                        height="20.394" viewBox="0 0 512 512">
+                                                        <path
+                                                            d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
+                                                            fill="currentColor" />
+                                                    </svg>
                                                 </span>
                                             </button>
                                         </h2>
                                         <div class="accordion__items--body">
-                                            <p class="accordion__items--body__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim felis.</p>
+                                            <p class="accordion__items--body__desc">We offer Part 101 (Basic
+                                                Recreational), Part 102 (Professional Commercial), Operational
+                                                Competency Assessment, Night Rating, and Survey courses.</p>
                                         </div>
                                     </div>
+
                                     <div class="accordion__items">
                                         <h2 class="accordion__items--title">
-                                            <button class="faq__accordion--btn accordion__items--button">What payment types can I use?
+                                            <button class="faq__accordion--btn accordion__items--button">How do I choose
+                                                the right course?
                                                 <span class="accordion__items--button__icon">
-                                                    <svg class="accordion__items--button__icon--svg" xmlns="http://www.w3.org/2000/svg" width="25.355" height="20.394" viewBox="0 0 512 512"><path d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z" fill="currentColor"/></svg>
+                                                    <svg class="accordion__items--button__icon--svg"
+                                                        xmlns="http://www.w3.org/2000/svg" width="25.355"
+                                                        height="20.394" viewBox="0 0 512 512">
+                                                        <path
+                                                            d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
+                                                            fill="currentColor" />
+                                                    </svg>
                                                 </span>
                                             </button>
                                         </h2>
                                         <div class="accordion__items--body">
-                                            <p class="accordion__items--body__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim felis.</p>
+                                            <p class="accordion__items--body__desc">Navigating the world of Drone Pilot
+                                                Certification can appear to be complex and confusing.
+                                                You can econtact us on email or phone and our friendly team will be able
+                                                to help you
+                                                understand the right course to select from.</p>
                                         </div>
                                     </div>
+
+
+                                    <div class="accordion__items">
+                                        <h2 class="accordion__items--title">
+                                            <button class="faq__accordion--btn accordion__items--button">How do I enroll
+                                                in a course?
+                                                <span class="accordion__items--button__icon">
+                                                    <svg class="accordion__items--button__icon--svg"
+                                                        xmlns="http://www.w3.org/2000/svg" width="25.355"
+                                                        height="20.394" viewBox="0 0 512 512">
+                                                        <path
+                                                            d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
+                                                            fill="currentColor" />
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                        </h2>
+                                        <div class="accordion__items--body">
+                                            <p class="accordion__items--body__desc">Simply browse our courses, email
+                                                support@droneworksconsultancy.com and one of the
+                                                friendly team at Drone Works will be able to guide you through the
+                                                enrolment process
+                                                and in choosing the course that best suits your needs. We are happy to
+                                                arrange invoicing
+                                                directly to your employer If you are gaining your qualifications for
+                                                work purposes. Please
+                                                contact us if you would like to discuss this option.</p>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="accordion__items">
+                                        <h2 class="accordion__items--title">
+                                            <button class="faq__accordion--btn accordion__items--button">When can I
+                                                start the course?
+                                                <span class="accordion__items--button__icon">
+                                                    <svg class="accordion__items--button__icon--svg"
+                                                        xmlns="http://www.w3.org/2000/svg" width="25.355"
+                                                        height="20.394" viewBox="0 0 512 512">
+                                                        <path
+                                                            d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
+                                                            fill="currentColor" />
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                        </h2>
+                                        <div class="accordion__items--body">
+                                            <p class="accordion__items--body__desc">As soon as you have registered.
+                                                Being an online course is this very easy seamless
+                                                process. For Face to Face course, please contact us if you would like to
+                                                discuss this option.</p>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="accordion__items">
+                                        <h2 class="accordion__items--title">
+                                            <button class="faq__accordion--btn accordion__items--button">Do you charge
+                                                fees?
+                                                <span class="accordion__items--button__icon">
+                                                    <svg class="accordion__items--button__icon--svg"
+                                                        xmlns="http://www.w3.org/2000/svg" width="25.355"
+                                                        height="20.394" viewBox="0 0 512 512">
+                                                        <path
+                                                            d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
+                                                            fill="currentColor" />
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                        </h2>
+                                        <div class="accordion__items--body">
+                                            <p class="accordion__items--body__desc">All of our provided courses have a
+                                                fee. This is clearly stated prior to your purchase. Once
+                                                a course is purchased enrolment fees are non-refundable.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion__items">
+                                        <h2 class="accordion__items--title">
+                                            <button class="faq__accordion--btn accordion__items--button">Aren’t the fees
+                                                to high?
+                                                <span class="accordion__items--button__icon">
+                                                    <svg class="accordion__items--button__icon--svg"
+                                                        xmlns="http://www.w3.org/2000/svg" width="25.355"
+                                                        height="20.394" viewBox="0 0 512 512">
+                                                        <path
+                                                            d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
+                                                            fill="currentColor" />
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                        </h2>
+                                        <div class="accordion__items--body">
+                                            <p class="accordion__items--body__desc">We have tailored made the course and
+                                                delivery of the course to the participants. There
+                                                are other vendors from Overseas who is charging FJ$4200 twice the amount
+                                                in fees from
+                                                what our fees are.</p>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="accordion__items">
+                                        <h2 class="accordion__items--title">
+                                            <button class="faq__accordion--btn accordion__items--button">What does the
+                                                Part 101 RPAS (Recreational Personal Use) syllabus cover?
+                                                <span class="accordion__items--button__icon">
+                                                    <svg class="accordion__items--button__icon--svg"
+                                                        xmlns="http://www.w3.org/2000/svg" width="25.355"
+                                                        height="20.394" viewBox="0 0 512 512">
+                                                        <path
+                                                            d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
+                                                            fill="currentColor" />
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                        </h2>
+                                        <div class="accordion__items--body">
+                                            <ul class="accordion__items--body__list">
+                                                <li>Module 1: Introduction</li>
+                                                <li>Module 2: Civil Aviation Rules</li>
+                                                <li>Module 3: Understanding the Concept of Airspace</li>
+                                                <li>Module 4: Drone Altitude: The Importance of AGL vs AMSL</li>
+                                                <li>Module 5: Airspace Categories</li>
+                                                <li>Module 6: Transit Lanes and Special Use Airspace</li>
+                                                <li>Module 7: Runways, Aerodrome Operations and Authorisations</li>
+                                                <li>Module 8: Using the Airshare Site</li>
+                                                <li>Module 9: Finding ATC Contact Information on the AIP Site</li>
+                                                <li>Part 101 Online Exam</li>
+                                                <li>Booking your flight test</li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="accordion__items">
+                                        <h2 class="accordion__items--title">
+                                            <button class="faq__accordion--btn accordion__items--button">
+                                                What does the Part 102 Professional RPAS syllabus cover?
+                                                <span class="accordion__items--button__icon">
+                                                    <svg class="accordion__items--button__icon--svg"
+                                                        xmlns="http://www.w3.org/2000/svg" width="25.355"
+                                                        height="20.394" viewBox="0 0 512 512">
+                                                        <path
+                                                            d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
+                                                            fill="currentColor" />
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                        </h2>
+                                        <div class="accordion__items--body">
+                                            <p>(Note: this course includes all learning content from the NZ Part 101
+                                                Pilot Certificate - Modules 1–9, with the additional learning material
+                                                Modules 10–16)</p>
+                                            <ul class="accordion__items--body__list">
+                                                <li>Module 1: Introduction</li>
+                                                <li>Module 2: Civil Aviation Rules</li>
+                                                <li>Module 3: Understanding the Concept of Airspace</li>
+                                                <li>Module 4: Drone Altitude: The Importance of AGL vs AMSL</li>
+                                                <li>Module 5: Airspace Categories</li>
+                                                <li>Module 6: Transit Lanes and Special Use Airspace</li>
+                                                <li>Module 7: Runways, Aerodrome Operations and Authorisations</li>
+                                                <li>Module 8: Using the Airshare Site</li>
+                                                <li>Module 9: Finding ATC Contact Information on the AIP Site</li>
+                                                <li>Part 101 Online Exam</li>
+                                                <li>Module 10: Part 102 Certification</li>
+                                                <li>Module 11: Other UAOC Requirements</li>
+                                                <li>Module 12: NOTAMs and other AIP Supplements</li>
+                                                <li>Module 13: Basic Meteorology for UAV Operators</li>
+                                                <li>Module 14: GPS Basics</li>
+                                                <li>Module 15: Activity – Plan and Document a Part 102 Flight</li>
+                                                <li>Module 16: Part 102 Currency Period and Flight Assessment</li>
+                                                <li>Part 102 Final Online Exam</li>
+                                                <li>Booking your flight test</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="accordion__items">
+                                        <h2 class="accordion__items--title">
+                                            <button class="faq__accordion--btn accordion__items--button">
+                                                Do I have to sit an exam?
+                                                <span class="accordion__items--button__icon">
+                                                    <svg class="accordion__items--button__icon--svg"
+                                                        xmlns="http://www.w3.org/2000/svg" width="25.355"
+                                                        height="20.394" viewBox="0 0 512 512">
+                                                        <path
+                                                            d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
+                                                            fill="currentColor" />
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                        </h2>
+                                        <div class="accordion__items--body">
+                                            <p class="accordion__items--body__desc">
+                                                A function of the online theory course is that it provides quizzes after
+                                                each segment (of which there are 8 for the Part 101 section and 7 for
+                                                the Part 102 section). This ensures you are learning as you go. There is
+                                                also a final online exam at the end of both Part 101 and Part 102
+                                                sections.
+                                            </p>
+                                            <ul class="accordion__items--body__list">
+                                                <li>For the Part 101 Pilot Certificate course, you will need to attain a
+                                                    minimum of 80% in the final online exam. This exercise brings
+                                                    together all the elements that you have learned from the course.
+                                                </li>
+
+                                                <li>For the Part 102 RPAS Professional Pilot Certificate course, there
+                                                    are two online exams and you will need to attain a minimum of 80% in
+                                                    both.</li>
+
+                                                <li>As the Part 101 course content is covered in the Part 102
+                                                    Professional Pilots Certificate course, there is no prerequisite to
+                                                    complete the separate NZ Part 101 Pilot Certificate course.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion__items">
+                                        <h2 class="accordion__items--title">
+                                            <button class="faq__accordion--btn accordion__items--button">What's involved
+                                                in the practical flight test?
+                                                <span class="accordion__items--button__icon">
+                                                    <svg class="accordion__items--button__icon--svg"
+                                                        xmlns="http://www.w3.org/2000/svg" width="25.355"
+                                                        height="20.394" viewBox="0 0 512 512">
+                                                        <path
+                                                            d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
+                                                            fill="currentColor" />
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                        </h2>
+                                        <div class="accordion__items--body">
+                                            <p class="accordion__items--body__desc">The practical flight involves a
+                                                demonstration of your ability to operate your drone safely,
+                                                while following all the regulations you have learnt in the theory
+                                                section. You will be
+                                                required to answer questions from the examiner about what you are doing,
+                                                as well as
+                                                completing a series of drone pilot tasks in and out of ATTI mode. Read
+                                                more about Your
+                                                Flight Assessment here. (This part will be a link to the page I will
+                                                provide text content for
+                                                drone training and flight assessment – I will explain over a phone call
+                                                once ready)</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion__items">
+                                        <h2 class="accordion__items--title">
+                                            <button class="faq__accordion--btn accordion__items--button">What is ATTI
+                                                mode?
+                                                <span class="accordion__items--button__icon">
+                                                    <svg class="accordion__items--button__icon--svg"
+                                                        xmlns="http://www.w3.org/2000/svg" width="25.355"
+                                                        height="20.394" viewBox="0 0 512 512">
+                                                        <path
+                                                            d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
+                                                            fill="currentColor" />
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                        </h2>
+                                        <div class="accordion__items--body">
+                                            <p class="accordion__items--body__desc">Atti Mode' is DJI term for Attitude
+                                                Mode - where your drone's GPS system is disable so it
+                                                will not remain in a stable hover situation, allowing it to be subject
+                                                to the effects of wind
+                                                drift. It's a CAA requirement that we assess each RPAS Pilot's ability
+                                                to safely operate
+                                                their drone when GPS signal is lost, and an Atti Mode situation arises.
+                                                The goal is for you
+                                                to develop skills to operate your drone safely if it reverts to Atti
+                                                Mode. You will need to
+                                                perform a range of tasks within Atti Mode.
+                                                Not all drones will have the functionality to manually select Atti Mode,
+                                                including the DJI
+                                                Mavic models.
+                                                Operating under trees, near buildings and structures, or near high
+                                                tension power lines
+                                                can cause signal loss, as well as a failure with the drone's GPS system,
+                                                and it can happen
+                                                at any time so it is important to practice. We recommend at least 6-8
+                                                batteries worth of
+                                                practice to become proficient. We can provide instructors if you require
+                                                tuition.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion__items">
+                                        <h2 class="accordion__items--title">
+                                            <button class="faq__accordion--btn accordion__items--button">Can I use my
+                                                own drone for the practical test?
+                                                <span class="accordion__items--button__icon">
+                                                    <svg class="accordion__items--button__icon--svg"
+                                                        xmlns="http://www.w3.org/2000/svg" width="25.355"
+                                                        height="20.394" viewBox="0 0 512 512">
+                                                        <path
+                                                            d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
+                                                            fill="currentColor" />
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                        </h2>
+                                        <div class="accordion__items--body">
+                                            <p class="accordion__items--body__desc">That’s not a problem, we encourage
+                                                you to use your own drone so long as your drone
+                                                has selectable Atti mode capability as a feature. If required, we can
+                                                assist with a hire
+                                                drone for you to complete your practical assessment. Click here to learn
+                                                about Atti Mode.
+                                                (This part will be a link to the page I will provide text content for
+                                                drone training and flight
+                                                assessment – I will explain over a phone call once ready)</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion__items">
+                                        <h2 class="accordion__items--title">
+                                            <button class="faq__accordion--btn accordion__items--button">What if I need
+                                                some additional help in being able to fly a drone?
+                                                <span class="accordion__items--button__icon">
+                                                    <svg class="accordion__items--button__icon--svg"
+                                                        xmlns="http://www.w3.org/2000/svg" width="25.355"
+                                                        height="20.394" viewBox="0 0 512 512">
+                                                        <path
+                                                            d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
+                                                            fill="currentColor" />
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                        </h2>
+                                        <div class="accordion__items--body">
+                                            <p class="accordion__items--body__desc">Not a problem - we have qualified
+                                                instructors who can provide additional training. After
+                                                discussing your specific needs, we will be in a position to give you an
+                                                indication of
+                                                availability and the cost for this service.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion__items">
+                                        <h2 class="accordion__items--title">
+                                            <button class="faq__accordion--btn accordion__items--button">What if I fail
+                                                my practical flight test?
+                                                <span class="accordion__items--button__icon">
+                                                    <svg class="accordion__items--button__icon--svg"
+                                                        xmlns="http://www.w3.org/2000/svg" width="25.355"
+                                                        height="20.394" viewBox="0 0 512 512">
+                                                        <path
+                                                            d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
+                                                            fill="currentColor" />
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                        </h2>
+                                        <div class="accordion__items--body">
+                                            <p class="accordion__items--body__desc">Should you need to repeat your
+                                                practical assessment. There is no extra cost for fees for
+                                                repeat on practical assessment (within Suva). However, there will be an
+                                                additional charge
+                                                to cover the examiner fee and admin costs if this is to be done outside
+                                                of the working
+                                                area of the examiner.
+                                                You will need to be well prepared for this test, and we highly recommend
+                                                6-8 batteries
+                                                worth of practice time. If you don't feel confident in your abilities we
+                                                have instructors
+                                                available around the country to help you improve, see the below question
+                                                for more info.</p>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="accordion__items">
+                                        <h2 class="accordion__items--title">
+                                            <button class="faq__accordion--btn accordion__items--button">How much time
+                                                do I have to complete the course?
+                                                <span class="accordion__items--button__icon">
+                                                    <svg class="accordion__items--button__icon--svg"
+                                                        xmlns="http://www.w3.org/2000/svg" width="25.355"
+                                                        height="20.394" viewBox="0 0 512 512">
+                                                        <path
+                                                            d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
+                                                            fill="currentColor" />
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                        </h2>
+                                        <div class="accordion__items--body">
+                                            <p class="accordion__items--body__desc">We recommend completing the course
+                                                in 2-4 weeks (30 Days). Please note that
+                                                there is a maximum period that the course content is open to each
+                                                individual of 12
+                                                months. The advantage of our online learning platform is that you can
+                                                learn at your own
+                                                place and at your own pace. We encourage participants to take their time
+                                                and do
+                                                modules in such a way that ensures you don’t rush the process. You can
+                                                leave the course
+                                                and come back at any time. The structure of the course allows you to
+                                                refer back to material you have previously completed. This is a great
+                                                feature as it allows you to
+                                                become confident as you grow in knowledge by revisiting the content to
+                                                check your
+                                                understanding. Notwithstanding that we do encourage individuals to build
+                                                and retain
+                                                knowledge over a reasonably short timeframe to ensure you retain an
+                                                overall
+                                                understanding of the total learning provided in the course.
+                                                The course contains informative videos to assist learning and make the
+                                                experience an
+                                                enjoyable process. And if you get stuck or have a question, the friendly
+                                                team at Drone
+                                                Trust are here to assist. And remember, we exist by making you
+                                                successful through your
+                                                gaining a good level of aviation knowledge that you can apply to your
+                                                aviation activity.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion__items">
+                                        <h2 class="accordion__items--title">
+                                            <button class="faq__accordion--btn accordion__items--button">What happens if
+                                                I don't complete the course within 12 months?
+                                                <span class="accordion__items--button__icon">
+                                                    <svg class="accordion__items--button__icon--svg"
+                                                        xmlns="http://www.w3.org/2000/svg" width="25.355"
+                                                        height="20.394" viewBox="0 0 512 512">
+                                                        <path
+                                                            d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
+                                                            fill="currentColor" />
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                        </h2>
+                                        <div class="accordion__items--body">
+                                            <p class="accordion__items--body__desc">You will need to purchase another
+                                                course after 12 months.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion__items">
+                                        <h2 class="accordion__items--title">
+                                            <button class="faq__accordion--btn accordion__items--button">I have a
+                                                Professional RPAS Pilot Certificate to Part 102 standard. Can I now
+                                                operate outside the 101 rules?
+                                                <span class="accordion__items--button__icon">
+                                                    <svg class="accordion__items--button__icon--svg"
+                                                        xmlns="http://www.w3.org/2000/svg" width="25.355"
+                                                        height="20.394" viewBox="0 0 512 512">
+                                                        <path
+                                                            d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
+                                                            fill="currentColor" />
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                        </h2>
+                                        <div class="accordion__items--body">
+                                            <p class="accordion__items--body__desc">Not necessarily. This certificate
+                                                enables you to fly for an organisation that holds a Part
+                                                102 certificate (UAOC / CAAF RPAS Authorisation), and being inducted
+                                                onto this
+                                                certificate is what will allow you exemptions from the 101 rules. The
+                                                UAOC may cover
+                                                multiple pilots in a larger business, or just one sole contractor. To
+                                                obtain a UAOC you
+                                                must submit an application to CAA that details how you will operate
+                                                safely. Drone Works
+                                                Consultancy is here to help with this process.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion__items">
+                                        <h2 class="accordion__items--title">
+                                            <button class="faq__accordion--btn accordion__items--button">How often do I
+                                                have to renew my Pilot Certificate?
+                                                <span class="accordion__items--button__icon">
+                                                    <svg class="accordion__items--button__icon--svg"
+                                                        xmlns="http://www.w3.org/2000/svg" width="25.355"
+                                                        height="20.394" viewBox="0 0 512 512">
+                                                        <path
+                                                            d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
+                                                            fill="currentColor" />
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                        </h2>
+                                        <div class="accordion__items--body">
+                                            <p class="accordion__items--body__desc">
+                                            <p><span>Scenario 1:</span> Where an individual holds a Part 101 RPAS pilot
+                                                certificate they need to
+                                                renew every 2 years. A competency test is required for these renewals
+                                                which involves
+                                                refresher theory training and a practical assessment with an examiner.
+                                                In the case of a
+                                                Part 102 RPAS pilot, where they are not flying under an organisation's
+                                                UAOC certificate, *
+                                                <span>pilot’s certificates also need to be renewed every 2 years</span>.
+                                                A competency test is
+                                                required for these renewals which involves an online refresher theory
+                                                training and a
+                                                practical assessment with an examiner.
+                                            </p>
+                                            <p><span>*Note:</span> An individual can attain a Part 102 RPAS pilot
+                                                certificate, but unless they are
+                                                flying under an organisation’s UAOC certificate, they can only operate
+                                                under Part 101
+                                                rules. If you fly under an organisation’s UAOC as a Part 102 RPAS pilot,
+                                                it is only at that
+                                                point that you are permitted to fly outside of the Part 101 rules. When
+                                                flying outside of
+                                                the Part 101 rules under an organisation’s UAOC, you are flying under
+                                                what is termed as,
+                                                the privileges that CAA have approved for that organisation. These
+                                                flying privileges are
+                                                recorded in what is known as the organisation’s Exposition and they will
+                                                vary between
+                                                each UAOC organisation</p>
+
+                                            <p><span>Scenario 2:</span> Where an individual is flying as a 102 RPAS
+                                                Pilot under the umbrella of an
+                                                organisation that holds a UAOC certificate. The organisation requires
+                                                the individual to
+                                                undergo an annual OCA competency test. As long as the Part 102 RPAS
+                                                pilot is
+                                                operating under a UAOC umbrella they are not <span>required to
+                                                    separately renew their
+                                                    individual pilot’s certificate</span>. The UAOC OCA (Operational
+                                                Competency Assessment)
+                                                requirement is sufficient.</p>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion__items">
+                                        <h2 class="accordion__items--title">
+                                            <button class="faq__accordion--btn accordion__items--button">I have a
+                                                Professional RPAS Pilot Certificate to Part 102 standard. Can I now
+                                                operate outside the 101 rules?
+                                                <span class="accordion__items--button__icon">
+                                                    <svg class="accordion__items--button__icon--svg"
+                                                        xmlns="http://www.w3.org/2000/svg" width="25.355"
+                                                        height="20.394" viewBox="0 0 512 512">
+                                                        <path
+                                                            d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
+                                                            fill="currentColor" />
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                        </h2>
+                                        <div class="accordion__items--body">
+                                            <p class="accordion__items--body__desc">Not necessarily. This certificate
+                                                enables you to fly for an organisation that holds a Part
+                                                102 certificate (UAOC / CAAF RPAS Authorisation), and being inducted
+                                                onto this
+                                                certificate is what will allow you exemptions from the 101 rules. The
+                                                UAOC may cover
+                                                multiple pilots in a larger business, or just one sole contractor. To
+                                                obtain a UAOC you
+                                                must submit an application to CAA that details how you will operate
+                                                safely. Drone Works
+                                                Consultancy is here to help with this process.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion__items">
+                                        <h2 class="accordion__items--title">
+                                            <button class="faq__accordion--btn accordion__items--button">Can I fly over
+                                                crowds?
+                                                <span class="accordion__items--button__icon">
+                                                    <svg class="accordion__items--button__icon--svg"
+                                                        xmlns="http://www.w3.org/2000/svg" width="25.355"
+                                                        height="20.394" viewBox="0 0 512 512">
+                                                        <path
+                                                            d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
+                                                            fill="currentColor" />
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                        </h2>
+                                        <div class="accordion__items--body">
+                                            <p class="accordion__items--body__desc">Under Part 101 rules, you can only
+                                                do this if you have direct consent from everyone you
+                                                fly over. A disclaimer in the conditions of a ticket or sign-posted is
+                                                not enough in this
+                                                case.Flying over a large group of people at a public event is likely to
+                                                be regarded as a
+                                                hazardous operation, which is outside the bounds of Part 101.
+                                                This means certification is required under Part 102. The CAA would
+                                                assess the need to
+                                                get consent based on the operation, airworthiness of your aircraft, and
+                                                the experience of
+                                                the person behind the controls. The CAA may satisfy the requirement for
+                                                consent by
+                                                requiring you to erect signs at the entrance to the event. In some
+                                                cases, the CAA may
+                                                waive the requirement to gain consent if it determines you are capable
+                                                of managing the
+                                                risks effectively.
+                                                You will also have to consider the application of the Health and Safety
+                                                at Work Act
+                                                (2015).
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion__items">
+                                        <h2 class="accordion__items--title">
+                                            <button class="faq__accordion--btn accordion__items--button">Can I fly over
+                                                crowds?
+                                                <span class="accordion__items--button__icon">
+                                                    <svg class="accordion__items--button__icon--svg"
+                                                        xmlns="http://www.w3.org/2000/svg" width="25.355"
+                                                        height="20.394" viewBox="0 0 512 512">
+                                                        <path
+                                                            d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
+                                                            fill="currentColor" />
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                        </h2>
+                                        <div class="accordion__items--body">
+                                            <p class="accordion__items--body__desc">Under Part 101 rules, you can only
+                                                do this if you have direct consent from everyone you
+                                                fly over. A disclaimer in the conditions of a ticket or sign-posted is
+                                                not enough in this
+                                                case.Flying over a large group of people at a public event is likely to
+                                                be regarded as a
+                                                hazardous operation, which is outside the bounds of Part 101.
+                                                This means certification is required under Part 102. The CAA would
+                                                assess the need to
+                                                get consent based on the operation, airworthiness of your aircraft, and
+                                                the experience of
+                                                the person behind the controls. The CAA may satisfy the requirement for
+                                                consent by
+                                                requiring you to erect signs at the entrance to the event. In some
+                                                cases, the CAA may
+                                                waive the requirement to gain consent if it determines you are capable
+                                                of managing the
+                                                risks effectively.
+                                                You will also have to consider the application of the Health and Safety
+                                                at Work Act
+                                                (2015).
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion__items">
+                                        <h2 class="accordion__items--title">
+                                            <button class="faq__accordion--btn accordion__items--button">I am a 102 RPAS
+                                                Pilot with a UAOC, I just bought a new drone, what do I need
+                                                to do?
+                                                <span class="accordion__items--button__icon">
+                                                    <svg class="accordion__items--button__icon--svg"
+                                                        xmlns="http://www.w3.org/2000/svg" width="25.355"
+                                                        height="20.394" viewBox="0 0 512 512">
+                                                        <path
+                                                            d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
+                                                            fill="currentColor" />
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                        </h2>
+                                        <div class="accordion__items--body">
+                                            <p class="accordion__items--body__desc">Before you can use this drone for
+                                                the activities allowed on your UAOC, it must be listed
+                                                on the Operations Specifications issued by CAA. You will have to make an
+                                                amendment
+                                                application to CAA and wait for it to be approved before using the
+                                                drone.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion__items">
+                                        <h2 class="accordion__items--title">
+                                            <button class="faq__accordion--btn accordion__items--button">I have a Part
+                                                61 license (PPL/CPL/ATPL). Do my qualifications transfer?
+                                                <span class="accordion__items--button__icon">
+                                                    <svg class="accordion__items--button__icon--svg"
+                                                        xmlns="http://www.w3.org/2000/svg" width="25.355"
+                                                        height="20.394" viewBox="0 0 512 512">
+                                                        <path
+                                                            d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
+                                                            fill="currentColor" />
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                        </h2>
+                                        <div class="accordion__items--body">
+                                            <p class="accordion__items--body__desc">Similar to the MFNZ Wings, this
+                                                qualification is accepted by the Civil Aviation Authority as
+                                                the qualification needed to operate within 4km of an aerodrome per the
+                                                101 rules.
+                                                A PPL holder would also be suitable for fulfilling te observation
+                                                requirements if a non
+                                                qualified experienced drone pilot is flying in this situation. That
+                                                being said, the pilot
+                                                license would not fully cover drone related requirements so it's highly
+                                                recommended to
+                                                brush up on these rules prior.
+                                                To operate outside of 101 rules, you are subject to the same
+                                                requirements of everyone
+                                                else (102 certs, UAOC etc), however your existing aviation knowledge
+                                                will make the
+                                                theory portions of the qualification much easier.
+                                            </p>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="accordion__items">
+                                        <h2 class="accordion__items--title">
+                                            <button class="faq__accordion--btn accordion__items--button">Can I fly over
+                                                roads?
+                                                <span class="accordion__items--button__icon">
+                                                    <svg class="accordion__items--button__icon--svg"
+                                                        xmlns="http://www.w3.org/2000/svg" width="25.355"
+                                                        height="20.394" viewBox="0 0 512 512">
+                                                        <path
+                                                            d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
+                                                            fill="currentColor" />
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                        </h2>
+                                        <div class="accordion__items--body">
+                                            <p class="accordion__items--body__desc">Waka Kotahi, the road controlling
+                                                authority for New Zealand’s 11,000 km of state
+                                                highways, is responsible for permitting any flying in the airspace above
+                                                these roads.
+                                                Their rules state that that unless you have Part 102 certification, you
+                                                may not fly or film
+                                                directly above or along NZ highways, along the road corridor, or cross
+                                                over a section of
+                                                the state highway, or on land potentially zoned for roading project,
+                                                regardless of whether
+                                                the highway is open or closed at the time of operation, even if there is
+                                                no traffic using the
+                                                road at the time.to fly directly above or
+                                                They consider drones to be a distraction to road users that may result
+                                                in or be the cause
+                                                of an accident, or be a direct hazard to people and vehicles due to
+                                                misadventure or a
+                                                malfunction.
+                                                Operators who hold, or are planning to apply for, a Part 102 certificate
+                                                issued by the CAA
+                                                who intend to fly above or adjacent to a state highway, should contact
+                                                Waka Kotahi for
+                                                permission Requests will be considered on a case-by-case basis, taking
+                                                into account an agreed
+                                                safety plan that will describe how you propose to manage the risks to
+                                                road users, the
+                                                state highway network and any contractor or supplier staff and
+                                                equipment.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion__items">
+                                        <h2 class="accordion__items--title">
+                                            <button class="faq__accordion--btn accordion__items--button">What is the
+                                                difference between the terms RPAS, UA, UAS, UAV and drone?
+                                                <span class="accordion__items--button__icon">
+                                                    <svg class="accordion__items--button__icon--svg"
+                                                        xmlns="http://www.w3.org/2000/svg" width="25.355"
+                                                        height="20.394" viewBox="0 0 512 512">
+                                                        <path
+                                                            d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
+                                                            fill="currentColor" />
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                        </h2>
+                                        <div class="accordion__items--body">
+                                            <p class="accordion__items--body__desc">Very little, and these terms are
+                                                used interchangeably. RPAS means a Remotely Piloted
+                                                Aircraft System and is a relatively new term that encompasses an
+                                                uncrewed aircraft (UA)
+                                                and everything involved in their operation including software, aircraft,
+                                                and operational
+                                                procedures. UAS/UAV means an Unmanned Aerial System/Vehicle and includes
+                                                software
+                                                and the aircraft vehicle. Drone is the common name for these.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion__items">
+                                        <h2 class="accordion__items--title">
+                                            <button class="faq__accordion--btn accordion__items--button">What privacy
+                                                rules/regulations are applicable to drone operations?
+                                                <span class="accordion__items--button__icon">
+                                                    <svg class="accordion__items--button__icon--svg"
+                                                        xmlns="http://www.w3.org/2000/svg" width="25.355"
+                                                        height="20.394" viewBox="0 0 512 512">
+                                                        <path
+                                                            d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
+                                                            fill="currentColor" />
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                        </h2>
+                                        <div class="accordion__items--body">
+                                            <p class="accordion__items--body__desc">(NOTE: Answer provided by the Office
+                                                of the Privacy Commissioner)
+                                            </p>
+                                            <p>The Privacy Act applies to drones whenever they are collecting
+                                                information for
+                                                commercial purposes. This includes any situation when the camera is
+                                                active – whether
+                                                it’s recording or not. </p>
+                                            <p>Notification is the most relevant component of the Privacy Act. Drone
+                                                operators need to
+                                                take reasonably practicable steps to notify people that camera equipped
+                                                drones are
+                                                active in the area, who is responsible for them and what the footage
+                                                will be used for. This
+                                                could be as simple as posting a sign, but will be dictated by the
+                                                situation’s specific
+                                                circumstances. In some cases it will not be practical.</p>
+                                            <p>Drone operators also need to make sure they aren’t collecting information
+                                                in an unfair
+                                                way, or in a way that intrudes unreasonably on someone’s personal
+                                                affairs. Notification
+                                                does not excuse operators from this aspect of the Privacy Act. For
+                                                example, it would
+                                                probably be unfair to hover outside someone’s bedroom window while they
+                                                change –
+                                                regardless of whether the resident was notified.</p>
+                                            <p>While notification is the most relevant, the other privacy principles
+                                                (such as those
+                                                concerning storage, use and disclosure of information) are also relevant
+                                                to drone use. An
+                                                overview of the principles is available here. </p>
+                                            <p>This blog post is a real-world example of drones and privacy issues. </p>
+                                            <p>Finally, at least one person in every organisation should undertake the
+                                                Privacy 101 e-
+                                                learning module, which gives more detail about the rights and
+                                                obligations organisations
+                                                and people have under the Privacy Act.</p>
+                                        </div>
+                                    </div>
+
+
+
                                 </div>
                             </div>
-                            <div class="col-lg-6">
+
+
+                            <!-- <div class="col-lg-6">
                                 <div class="accordion__container">
                                     <div class="accordion__items">
                                         <h2 class="accordion__items--title">
-                                            <button class="faq__accordion--btn accordion__items--button">Do you ship internationally??
+                                            <button class="faq__accordion--btn accordion__items--button">Do you ship
+                                                internationally??
                                                 <span class="accordion__items--button__icon">
-                                                    <svg class="accordion__items--button__icon--svg" xmlns="http://www.w3.org/2000/svg" width="25.355" height="20.394" viewBox="0 0 512 512"><path d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z" fill="currentColor"/></svg>
+                                                    <svg class="accordion__items--button__icon--svg"
+                                                        xmlns="http://www.w3.org/2000/svg" width="25.355"
+                                                        height="20.394" viewBox="0 0 512 512">
+                                                        <path
+                                                            d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
+                                                            fill="currentColor" />
+                                                    </svg>
                                                 </span>
                                             </button>
                                         </h2>
                                         <div class="accordion__items--body">
-                                            <p class="accordion__items--body__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim felis.</p>
+                                            <p class="accordion__items--body__desc">Lorem ipsum dolor sit amet,
+                                                consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.
+                                                Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non,
+                                                semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis
+                                                fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim
+                                                felis.</p>
                                         </div>
                                     </div>
                                     <div class="accordion__items">
                                         <h2 class="accordion__items--title">
-                                            <button class="faq__accordion--btn accordion__items--button">How will my parcel be delivered?
+                                            <button class="faq__accordion--btn accordion__items--button">How will my
+                                                parcel be delivered?
                                                 <span class="accordion__items--button__icon">
-                                                    <svg class="accordion__items--button__icon--svg" xmlns="http://www.w3.org/2000/svg" width="25.355" height="20.394" viewBox="0 0 512 512"><path d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z" fill="currentColor"/></svg>
+                                                    <svg class="accordion__items--button__icon--svg"
+                                                        xmlns="http://www.w3.org/2000/svg" width="25.355"
+                                                        height="20.394" viewBox="0 0 512 512">
+                                                        <path
+                                                            d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
+                                                            fill="currentColor" />
+                                                    </svg>
                                                 </span>
                                             </button>
                                         </h2>
                                         <div class="accordion__items--body">
-                                            <p class="accordion__items--body__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim felis.</p>
+                                            <p class="accordion__items--body__desc">Lorem ipsum dolor sit amet,
+                                                consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.
+                                                Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non,
+                                                semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis
+                                                fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim
+                                                felis.</p>
                                         </div>
                                     </div>
                                     <div class="accordion__items">
                                         <h2 class="accordion__items--title">
-                                            <button class="faq__accordion--btn accordion__items--button">How do I know if something is organic?
+                                            <button class="faq__accordion--btn accordion__items--button">How do I know
+                                                if something is organic?
                                                 <span class="accordion__items--button__icon">
-                                                    <svg class="accordion__items--button__icon--svg" xmlns="http://www.w3.org/2000/svg" width="25.355" height="20.394" viewBox="0 0 512 512"><path d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z" fill="currentColor"/></svg>
+                                                    <svg class="accordion__items--button__icon--svg"
+                                                        xmlns="http://www.w3.org/2000/svg" width="25.355"
+                                                        height="20.394" viewBox="0 0 512 512">
+                                                        <path
+                                                            d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
+                                                            fill="currentColor" />
+                                                    </svg>
                                                 </span>
                                             </button>
                                         </h2>
                                         <div class="accordion__items--body">
-                                            <p class="accordion__items--body__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim felis.</p>
+                                            <p class="accordion__items--body__desc">Lorem ipsum dolor sit amet,
+                                                consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.
+                                                Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non,
+                                                semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis
+                                                fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim
+                                                felis.</p>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
+
                         </div>
                     </div>
-                    <div class="face__step one border-bottom" id="accordionExample2">
-                        <h3 class="face__step--title mb-30">Payment Information</h3>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="accordion__container">
-                                    <div class="accordion__items">
-                                        <h2 class="accordion__items--title">
-                                            <button class="faq__accordion--btn accordion__items--button">What payment types can I use?
-                                                <span class="accordion__items--button__icon">
-                                                    <svg class="accordion__items--button__icon--svg" xmlns="http://www.w3.org/2000/svg" width="25.355" height="20.394" viewBox="0 0 512 512"><path d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z" fill="currentColor"/></svg>
-                                                </span>
-                                            </button>
-                                        </h2>
-                                        <div class="accordion__items--body">
-                                            <p class="accordion__items--body__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim felis.</p>
-                                        </div>
-                                    </div>
-                                    <div class="accordion__items">
-                                        <h2 class="accordion__items--title">
-                                            <button class="faq__accordion--btn accordion__items--button">Can I pay by Gift Card?
-                                                <span class="accordion__items--button__icon">
-                                                    <svg class="accordion__items--button__icon--svg" xmlns="http://www.w3.org/2000/svg" width="25.355" height="20.394" viewBox="0 0 512 512"><path d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z" fill="currentColor"/></svg>
-                                                </span>
-                                            </button>
-                                        </h2>
-                                        <div class="accordion__items--body">
-                                            <p class="accordion__items--body__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim felis.</p>
-                                        </div>
-                                    </div>
-                                    <div class="accordion__items">
-                                        <h2 class="accordion__items--title">
-                                            <button class="faq__accordion--btn accordion__items--button">can't make a payment
-                                                <span class="accordion__items--button__icon">
-                                                    <svg class="accordion__items--button__icon--svg" xmlns="http://www.w3.org/2000/svg" width="25.355" height="20.394" viewBox="0 0 512 512"><path d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z" fill="currentColor"/></svg>
-                                                </span>
-                                            </button>
-                                        </h2>
-                                        <div class="accordion__items--body">
-                                            <p class="accordion__items--body__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim felis.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="accordion__container">
-                                    <div class="accordion__items">
-                                        <h2 class="accordion__items--title">
-                                            <button class="faq__accordion--btn accordion__items--button">Has my payment gone through?
-                                                <span class="accordion__items--button__icon">
-                                                    <svg class="accordion__items--button__icon--svg" xmlns="http://www.w3.org/2000/svg" width="25.355" height="20.394" viewBox="0 0 512 512"><path d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z" fill="currentColor"/></svg>
-                                                </span>
-                                            </button>
-                                        </h2>
-                                        <div class="accordion__items--body">
-                                            <p class="accordion__items--body__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim felis.</p>
-                                        </div>
-                                    </div>
-                                    <div class="accordion__items">
-                                        <h2 class="accordion__items--title">
-                                            <button class="faq__accordion--btn accordion__items--button">Tracking my order
-                                                <span class="accordion__items--button__icon">
-                                                    <svg class="accordion__items--button__icon--svg" xmlns="http://www.w3.org/2000/svg" width="25.355" height="20.394" viewBox="0 0 512 512"><path d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z" fill="currentColor"/></svg>
-                                                </span>
-                                            </button>
-                                        </h2>
-                                        <div class="accordion__items--body">
-                                            <p class="accordion__items--body__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim felis.</p>
-                                        </div>
-                                    </div>
-                                    <div class="accordion__items">
-                                        <h2 class="accordion__items--title">
-                                            <button class="faq__accordion--btn accordion__items--button">Haven’t received my order
-                                                <span class="accordion__items--button__icon">
-                                                    <svg class="accordion__items--button__icon--svg" xmlns="http://www.w3.org/2000/svg" width="25.355" height="20.394" viewBox="0 0 512 512"><path d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z" fill="currentColor"/></svg>
-                                                </span>
-                                            </button>
-                                        </h2>
-                                        <div class="accordion__items--body">
-                                            <p class="accordion__items--body__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim felis.</p>
-                                        </div>
-                                    </div>
-                                </div>    
-                            </div>
-                        </div>
-                    </div>
-                    <div class="face__step one" id="accordionExample3">
-                        <h3 class="face__step--title mb-30">Orders and Returns</h3>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="accordion__container">
-                                    <div class="accordion__items">
-                                        <h2 class="accordion__items--title">
-                                            <button class="faq__accordion--btn accordion__items--button">How can I return an item?
-                                                <span class="accordion__items--button__icon">
-                                                    <svg class="accordion__items--button__icon--svg" xmlns="http://www.w3.org/2000/svg" width="25.355" height="20.394" viewBox="0 0 512 512"><path d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z" fill="currentColor"/></svg>
-                                                </span>
-                                            </button>
-                                        </h2>
-                                        <div class="accordion__items--body">
-                                            <p class="accordion__items--body__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim felis.</p>
-                                        </div>
-                                    </div>
-                                    <div class="accordion__items">
-                                        <h2 class=" accordion__items--title">
-                                            <button class="faq__accordion--btn accordion__items--button">What Shipping Methods Are Available?
-                                                <span class="accordion__items--button__icon">
-                                                    <svg class="accordion__items--button__icon--svg" xmlns="http://www.w3.org/2000/svg" width="25.355" height="20.394" viewBox="0 0 512 512"><path d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z" fill="currentColor"/></svg>
-                                                </span>
-                                            </button>
-                                        </h2>
-                                        <div class="accordion__items--body">
-                                            <p class="accordion__items--body__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim felis.</p>
-                                        </div>
-                                    </div>
-                                    <div class="accordion__items">
-                                        <h2 class="accordion__items--title">
-                                            <button class="faq__accordion--btn accordion__items--button">How can i make refund from your website?
-                                                <span class="accordion__items--button__icon">
-                                                    <svg class="accordion__items--button__icon--svg" xmlns="http://www.w3.org/2000/svg" width="25.355" height="20.394" viewBox="0 0 512 512"><path d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z" fill="currentColor"/></svg>
-                                                </span>
-                                            </button>
-                                        </h2>
-                                        <div class="accordion__items--body">
-                                            <p class="accordion__items--body__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim felis.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="accordion__container">
-                                    <div class="accordion__items">
-                                        <h2 class="accordion__items--title">
-                                            <button class="faq__accordion--btn accordion__items--button">I am a new user. How should I start?
-                                                <span class="accordion__items--button__icon">
-                                                    <svg class="accordion__items--button__icon--svg" xmlns="http://www.w3.org/2000/svg" width="25.355" height="20.394" viewBox="0 0 512 512"><path d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z" fill="currentColor"/></svg>
-                                                </span>
-                                            </button>
-                                        </h2>
-                                        <div class="accordion__items--body">
-                                            <p class="accordion__items--body__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim felis.</p>
-                                        </div>
-                                    </div>
-                                    <div class="accordion__items">
-                                        <h2 class="accordion__items--title">
-                                            <button class="faq__accordion--btn accordion__items--button">What payment methods are accepted?
-                                                <span class="accordion__items--button__icon">
-                                                    <svg class="accordion__items--button__icon--svg" xmlns="http://www.w3.org/2000/svg" width="25.355" height="20.394" viewBox="0 0 512 512"><path d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z" fill="currentColor"/></svg>
-                                                </span>
-                                            </button>
-                                        </h2>
-                                        <div class="accordion__items--body">
-                                            <p class="accordion__items--body__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim felis.</p>
-                                        </div>
-                                    </div>
-                                    <div class="accordion__items">
-                                        <h2 class="accordion__items--title">
-                                            <button class="faq__accordion--btn accordion__items--button">Do you ship internationally?
-                                                <span class="accordion__items--button__icon">
-                                                    <svg class="accordion__items--button__icon--svg" xmlns="http://www.w3.org/2000/svg" width="25.355" height="20.394" viewBox="0 0 512 512"><path d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z" fill="currentColor"/></svg>
-                                                </span>
-                                            </button>
-                                        </h2>
-                                        <div class="accordion__items--body">
-                                            <p class="accordion__items--body__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim felis.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>   
-            </div>     
+                </div>
+            </div>
         </section>
         <!-- faq page section end -->
 
-         <!-- Start newsletter section -->
-         <section class="newsletter__section newsletter__bg">
+        <!-- Start newsletter section -->
+        <section class="newsletter__section newsletter__bg">
             <div class="container">
                 <div class="row row-cols-md-2 row-cols-1 align-items-center">
                     <div class="col">
                         <div class="newsletter__content position__relative">
-                            <h2 class="newsletter__content--title text-white">We Best To Immediately Do 
+                            <h2 class="newsletter__content--title text-white">We Best To Immediately Do
                                 Subscribe Newsleter.</h2>
                         </div>
                     </div>
@@ -480,14 +1254,19 @@
                         <div class="newsletter__subscribe">
                             <form class="newsletter__subscribe position__relative" action="#">
                                 <label>
-                                    <input class="newsletter__subscribe--input style2" placeholder="Enter Your Email" type="email">
+                                    <input class="newsletter__subscribe--input style2" placeholder="Enter Your Email"
+                                        type="email">
                                 </label>
-                                <button class="newsletter__subscribe--button style2 primary__btn" type="submit">Subscribe
-                                    <svg class="newsletter__subscribe--button__icon" xmlns="http://www.w3.org/2000/svg" width="9.159" height="7.85" viewBox="0 0 9.159 7.85">
-                                        <path  data-name="Icon material-send" d="M3,12.35l9.154-3.925L3,4.5,3,7.553l6.542.872L3,9.3Z" transform="translate(-3 -4.5)" fill="currentColor"/>
+                                <button class="newsletter__subscribe--button style2 primary__btn"
+                                    type="submit">Subscribe
+                                    <svg class="newsletter__subscribe--button__icon" xmlns="http://www.w3.org/2000/svg"
+                                        width="9.159" height="7.85" viewBox="0 0 9.159 7.85">
+                                        <path data-name="Icon material-send"
+                                            d="M3,12.35l9.154-3.925L3,4.5,3,7.553l6.542.872L3,9.3Z"
+                                            transform="translate(-3 -4.5)" fill="currentColor" />
                                     </svg>
                                 </button>
-                            </form> 
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -497,7 +1276,7 @@
 
     </main>
 
-   
+
 
     <!-- Start footer section -->
     <footer class="footer__section footer__bg">
@@ -680,7 +1459,7 @@
     </footer>
     <!-- End footer section -->
 
-   
+
 
     <!-- Scroll top bar -->
     <button aria-label="scroll top btn" id="scroll__top"><svg xmlns="http://www.w3.org/2000/svg" class="ionicon"
